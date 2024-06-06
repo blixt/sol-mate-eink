@@ -48,7 +48,7 @@ python control.py clear
 I set up a cron job (`crontab -e`) to update the image two times per day, but keep in mind this can end up costing a non-trivial amount:
 
 ```crontab
-0 8 * * * cd ~/src/sol-mate-eink && ./venv/bin/python control.py show Barcelona
-0 18 * * * cd ~/src/sol-mate-eink && ./venv/bin/python control.py show Barcelona
-0 2 * * * cd ~/src/sol-mate-eink && ./venv/bin/python control.py clear
+0 8 * * * cd ~/src/sol-mate-eink && .venv/bin/python control.py show Barcelona
+0 18 * * * cd ~/src/sol-mate-eink && .venv/bin/python control.py show Barcelona
+0 2 * * * cd ~/src/sol-mate-eink && .venv/bin/python control.py clear
 ```
