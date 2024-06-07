@@ -90,31 +90,31 @@ Here is the weather for the location "{location}":
 
 {weather["status"]}
 
-Use Dall-E to generate a beautiful illustration of the location in a random
-style that goes well for this situation, in the style of a wide post card
-filling up the entire image. Try to describe a scene that is iconic and
-aesthetically pleasing for the location specified above, but also one that can
-showcase the weather. If it makes sense, use a scene that will have something
-distinctly green/blue/red/yellow/orange.
+Use Dall-E to generate a beautiful illustration of the location in the style of
+a wide post card filling up the entire image. Try to describe a scene that is
+iconic and aesthetically pleasing for the location specified above, but also one
+that can showcase the weather.
 
-Prefer to focus on one specific scene at the location in detail rather than
-mixing up things that might appear at different places around the location. If
-the location is something very local like a neighborhood, try to focus on that
-in the image. Describe the weather conditions with visual keywords so that they
-are clearly visible in the elements of the illustration. Also make sure to
-describe the color of the sky based on the sun (or what it should look like if
-only the moon is visible). Do not mention the exact time, instead use a more
-general word like "morning", "afternoon" or "midnight" and focus on including
-visual keywords that would clearly illustrate the place at that time. Also
-include "at night" if it's nighttime.
+Prefer to focus on one specific scene that exists in or around the specified
+location, and describe it in great detail. If the location is something very
+local like a neighborhood, try to focus on that in the image. If the location is
+generic, try to pick something iconic but avoid clichés. Describe the weather
+conditions with visual keywords and how they should appear within the
+illustration. Also make sure to describe the color of the sky based on the sun
+(or what it should look like if only the moon is visible). Do not mention the
+exact time, instead use a more general word like "morning", "afternoon" or
+"midnight" and focus on including visual keywords that would clearly illustrate
+the place at that time. Also include "at night" if it's nighttime.
 
 The name of the location and MOST IMPORTANTLY, the temperature MUST feature as
 prominently written text on top of the illustration. There should be no other
-text except for the location name and temperature. For the text, use large
-typography, in a style inspired by the location, weather and time of day. When
-describing the typography, use strong visual keywords rather than vague
-stylistic references. Make sure that the instructions for the text are clearly
-included in the prompt.
+text except for the location name and temperature. For the text, tell Dall-E
+early in the image description (as the second sentence) that "large text on top
+of the illustration reads: 'San Francisco 85°F'" (obviously replace San
+Francisco and temperature with the real location name and temperature). Also
+indicate the text should have a style inspired by the location, weather and time
+of day. When describing the typography, use clear, concrete visual keywords. The
+text instructions must be present in the prompt for Dall-E.
 
 There should be people in the image and at least some of them should be doing
 something interesting. Describe what the people are wearing or doing based on
@@ -123,14 +123,7 @@ if it's chilly, and so on, otherwise don't mention those things. Also include
 any celebrations people at the location might normally celebrate based on the
 current date, otherwise don't mention it.
 
-Make sure to describe every part of the image in detail so that the location can
-be accurately represented. If there should be buildings, describe how dense and
-where they are. If there should be nature describe what kinds of natural
-elements there are. If there are things happening or activities, describe them
-in detail. Avoid abstract or indirect terms, preferring words that visually
-describe what should be in the illustration in a very literal way.
-
-The prompt sent to Dall-E should be very detailed and around 150 words long.
+The prompt sent to Dall-E should be very detailed and around 100 words long.
 Avoid elaborate words and do not use negatives.
 """
 
