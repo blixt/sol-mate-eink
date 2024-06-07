@@ -2,7 +2,7 @@
 
 I initially made [the ☀️ Sol Mate GPT](https://chatgpt.com/g/g-QIydQSFRm-sol-mate), but it didn't take too long until I wondered what it would look like on [an e-Paper display](https://www.amazon.com/dp/B0BMQ83W7W).
 
-![GO7dhuhWMAANHTS](https://github.com/blixt/sol-mate-eink/assets/158591/d32dc678-6b6f-4424-b3b0-84c9e74b53f1)
+![IMG_5006](https://github.com/blixt/sol-mate-eink/assets/158591/1ef011a5-4c01-429f-872f-ea47f8c76e02)
 
 This repository contains all the code that was needed to generate and display a weather report for any specified location on a Raspberry Pi with an attached Waveshare e-Paper display.
 
@@ -52,3 +52,5 @@ I set up a cron job (`crontab -e`) to update the image two times per day, but ke
 0 18 * * * cd ~/src/sol-mate-eink && .venv/bin/python control.py show Barcelona
 0 2 * * * cd ~/src/sol-mate-eink && .venv/bin/python control.py clear
 ```
+
+(You'll need to tweak the paths for your setup, of course.)
