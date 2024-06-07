@@ -60,3 +60,7 @@ I set up a cron job (`crontab -e`) to update the image two times per day, but ke
 ```
 
 (You'll need to tweak the paths for your setup, of course.)
+
+## Having issues?
+
+I'd love to help if I can – [reach out on Twitter](https://twitter.com/blixt) or create an issue in this repo!
