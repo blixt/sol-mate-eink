@@ -13,6 +13,12 @@ You will need to specify an `OPENAI_API_KEY` environment variable. The code will
 - [Raspberry Pi 5](https://www.raspberrypi.com/products/raspberry-pi-5/)
 - [Waveshare e-Paper 7.3" display](https://www.amazon.com/dp/B0BMQ83W7W) (code needs to be updated for other sizes)
 
+## More pictures
+
+- [4 examples, some with more color](https://x.com/blixt/status/1797317001372750301)
+- [The setup, without the box](https://x.com/blixt/status/1796616909611278356)
+- [Video of the thinness of the display](https://x.com/blixt/status/1797350136080699837)
+
 ## Usage
 
 This should all run on your Raspberry Pi.
