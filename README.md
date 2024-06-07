@@ -61,6 +61,12 @@ I set up a cron job (`crontab -e`) to update the image two times per day, but ke
 
 (You'll need to tweak the paths for your setup, of course.)
 
+## Backend
+
+Feel free to use the private API I hosted to get the weather if you're not going to hammer it. I also use this backend for my GPT. However, if you have high volume ideas in mind, please self-host it! The source code is here:
+
+https://github.com/blixt/sol-mate
+
 ## Having issues?
 
 I'd love to help if I can – [reach out on Twitter](https://twitter.com/blixt) or create an issue in this repo!
