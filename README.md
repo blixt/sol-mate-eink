@@ -10,8 +10,8 @@ You will need to specify an `OPENAI_API_KEY` environment variable. The code will
 
 ## Hardware
 
-- Raspberry Pi 5
-- Waveshare e-Paper 7.3" display (code needs to be updated for other sizes)
+- [Raspberry Pi 5](https://www.raspberrypi.com/products/raspberry-pi-5/)
+- [Waveshare e-Paper 7.3" display](https://www.amazon.com/dp/B0BMQ83W7W) (code needs to be updated for other sizes)
 
 ## Usage
 
