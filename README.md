@@ -4,7 +4,7 @@ I initially made [the ☀️ Sol Mate GPT](https://chatgpt.com/g/g-QIydQSFRm-sol
 
 ![IMG_5006](https://github.com/blixt/sol-mate-eink/assets/158591/1ef011a5-4c01-429f-872f-ea47f8c76e02)
 
-For context, this project will take a location (maybe your own, maybe your best friend's, or even a fictional place!) and get the weather for that location, then generate an illustration of the location including the current weather and lighting conditions. If it's raining, there will be people with umbrellas in the picture, and so on. If you do generate for a fictional location, the weather service will be given the latitude/longitude of the most similar place on Earth (according to GPT). The illustrations are rendered using Dall-E 3. This is why an OpenAI API token is necessary to run it.
+The script to update the screen takes a location (maybe your own, maybe your best friend's, or even a fictional place!) and get the weather for that location, then generate an illustration of the location including the current weather and lighting conditions. So if it's raining, there will be people with umbrellas in the picture, and so on. If you do generate for a fictional location, the weather service will be given the latitude/longitude of the most similar place on Earth (according to GPT). The illustrations are rendered using Dall-E 3. This is why an OpenAI API token is necessary to run it.
 
 This repository contains all the code that was needed to generate and display a weather report for any specified location on a Raspberry Pi with an attached Waveshare e-Paper display.
 
