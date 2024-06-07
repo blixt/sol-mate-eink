@@ -45,7 +45,7 @@ Now you can use the `control.py` script to generate an image and show it on the 
 python control.py show Barcelona
 ```
 
-Don't leave the same image on the display for too long. Use the `clear` command to clear it:
+[Waveshare recommends](https://www.waveshare.com/wiki/7.3inch_e-Paper_HAT_(F)_Manual#Precautions) you don't leave the same image on the display for too long. Use the `clear` command to clear it:
 
 ```sh
 python control.py clear
