@@ -6,8 +6,6 @@ I initially made [the ☀️ Sol Mate GPT](https://chatgpt.com/g/g-QIydQSFRm-sol
 
 This repository contains all the code that was needed to generate and display a weather report for any specified location on a Raspberry Pi with an attached Waveshare e-Paper display.
 
-You will need to specify an `OPENAI_API_KEY` environment variable. The code will load environment variables from a `.env` file in the same directory.
-
 ## Hardware
 
 - [Raspberry Pi 5](https://www.raspberrypi.com/products/raspberry-pi-5/)
@@ -19,7 +17,7 @@ You will need to specify an `OPENAI_API_KEY` environment variable. The code will
 - [The setup, without the box](https://x.com/blixt/status/1796616909611278356)
 - [Video of the thinness of the display](https://x.com/blixt/status/1797350136080699837)
 
-## Usage
+## Software & Usage
 
 This should all run on your Raspberry Pi.
 
@@ -38,6 +36,8 @@ python -m venv .
 source .venv/bin/activate
 pip install -r requirements.txt
 ```
+
+You will need to specify an `OPENAI_API_KEY` environment variable. For your convenience, the code will load environment variables from a `.env` file in the current working directory.
 
 Now you can use the `control.py` script to generate an image and show it on the screen:
 
