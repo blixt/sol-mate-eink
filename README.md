@@ -2,7 +2,7 @@
 
 I initially made [the ☀️ Sol Mate GPT](https://chatgpt.com/g/g-QIydQSFRm-sol-mate), but it didn't take too long until I wondered what it would look like on [an e-Paper display](https://www.amazon.com/dp/B0BMQ83W7W).
 
-![IMG_5006](https://github.com/blixt/sol-mate-eink/assets/158591/1ef011a5-4c01-429f-872f-ea47f8c76e02)
+![Picture of the screen installed with a wooden frame](https://github.com/user-attachments/assets/dbd29ded-63bb-4075-aca4-658bf9e4e0f5)
 
 The script to update the screen takes a location (maybe your own, maybe your best friend's, or even a fictional place!) and get the weather for that location, then generate an illustration of the location including the current weather and lighting conditions. So if it's raining, there will be people with umbrellas in the picture, and so on. If you do generate for a fictional location, the weather service will be given the latitude/longitude of the most similar place on Earth (according to GPT). The illustrations are rendered using Dall-E 3. This is why an OpenAI API token is necessary to run it.
 
@@ -15,6 +15,8 @@ This repository contains all the code that was needed to generate and display a 
 
 ## More pictures
 
+- [3 more nice examples](https://x.com/blixt/status/1812941960451399909)
+- [3D-printing the case](https://x.com/blixt/status/1811077705804169416)
 - [4 examples, some with more color](https://x.com/blixt/status/1797317001372750301)
 - [The setup, without the box](https://x.com/blixt/status/1796616909611278356)
 - [Video of the thinness of the display](https://x.com/blixt/status/1797350136080699837)
