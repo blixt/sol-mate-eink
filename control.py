@@ -2,7 +2,7 @@ import logging
 import sys
 import time
 
-from ai import get_image, get_image_prompt
+from ai import get_image_dalle, get_image_recraft, get_image_prompt
 from epaper import EPaperDisplay
 
 
@@ -40,7 +40,7 @@ def main():
             logging.info(f"Prompt: {prompt}")
 
             logging.info("Generating the image")
-            image = get_image(prompt)
+            image = get_image_dalle(prompt)
 
             logging.info("Displaying the image")
             epd.display(image)

@@ -3,6 +3,8 @@ import json
 import logging
 from openai import OpenAI
 from PIL import Image
+import os
+import random
 import requests
 
 from epaper import convert_image_to_palette, fit_image_to_canvas, EPD_HEIGHT, EPD_WIDTH
@@ -159,7 +161,38 @@ Avoid elaborate words and do not use negatives.
     return arguments["prompt"]
 
 
-def get_image(prompt: str) -> Image.Image:
+def get_image_recraft(prompt: str) -> Image.Image:
+    styles = [
+        {"style": "digital_illustration"},
+        {"style": "digital_illustration", "substyle": "2d_art_poster_2"}
+        {"style": "digital_illustration", "substyle": "engraving_color"},
+        {"style": "digital_illustration", "substyle": "grain"},
+        {"style": "digital_illustration", "substyle": "hand_drawn"},
+    ]
+
+    style = random.choice(styles)
+    payload = {
+        "prompt": prompt,
+        "size": "1707x1024",
+        **style
+    }
+
+    logging.info(f"Using Recraft with {style}")
+
+    response = requests.post(
+        "https://external.api.recraft.ai/v1/images/generations",
+        headers={
+            "Content-Type": "application/json",
+            "Authorization": f"Bearer {os.getenv('RECRAFT_API_TOKEN')}",
+        },
+        json=payload
+    )
+    response.raise_for_status()
+    image_url = response.json()["data"][0]["url"]
+    return download_and_process_image(image_url)
+
+
+def get_image_dalle(prompt: str) -> Image.Image:
     response = client.images.generate(
         model="dall-e-3", prompt=prompt, n=1, size="1792x1024", quality="hd"
     )
@@ -170,6 +203,10 @@ def get_image(prompt: str) -> Image.Image:
     if response.data[0].revised_prompt:
         logging.info(f"Revised prompt: {response.data[0].revised_prompt}")
 
+    return download_and_process_image(image_url)
+
+
+def download_and_process_image(image_url: str) -> Image.Image:
     # Download the image to a temporary location
     temp_image_path = "/tmp/temp_image.png"
     with requests.get(image_url, stream=True) as r:
