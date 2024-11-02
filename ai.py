@@ -164,7 +164,7 @@ Avoid elaborate words and do not use negatives.
 def get_image_recraft(prompt: str) -> Image.Image:
     styles = [
         {"style": "digital_illustration"},
-        {"style": "digital_illustration", "substyle": "2d_art_poster_2"}
+        {"style": "digital_illustration", "substyle": "2d_art_poster_2"},
         {"style": "digital_illustration", "substyle": "engraving_color"},
         {"style": "digital_illustration", "substyle": "grain"},
         {"style": "digital_illustration", "substyle": "hand_drawn"},
